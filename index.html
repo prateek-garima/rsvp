@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nirmay's 3rd Birthday Bistro · RSVP</title>
+<meta property="og:title" content="You're invited: Nirmay's 3rd Birthday Bistro!">
+<meta property="og:description" content="Sunday 1 Nov, 4:30 to 7:45 PM at Cottage 854. Tap to reserve your seat.">
+<meta name="theme-color" content="#17396B">
+<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#FBF3E2;color:#17396B;font:600 20px system-ui,sans-serif}</style>
+</head>
+<body>
+<p>Setting your table…</p>
+<script>
+var M = {
+  prateek: "Prateek (test)", ansh: "Ansh & family", naini: "Naini, Nivi & family", rishi: "Rishi & family",
+  lana: "Lana & Gavin", vayu: "Vayu & family", amora: "Amora & family", veddya: "Veddya & family",
+  ruby: "Ruby", rampy: "Rampy", bobo: "BoBo & family", veer: "Veer & family", sumit: "Sumit & Neelima",
+  abhinav: "Priyanka & Abhinav", manu: "Manu & family", deepak: "Priyanka & Deepak", saish: "Saish, Sharu & family",
+  anu: "Anu, Sama & family", avay: "Avay & family", navya: "Navya, Baby V & family", ved: "Ved & family",
+  sangharsh: "Priyanka & Sangharsh", anay: "Anay, Avni & family"
+};
+var k = location.search.slice(1).split('&')[0].toLowerCase();
+var n = M[k];
+location.replace('https://prateek-garima.github.io/nirmay-bistro/' + (n ? '?n=' + encodeURIComponent(n) : ''));
+</script>
+</body>
+</html>
