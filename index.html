@@ -12,17 +12,18 @@
 <body>
 <p>Setting your table…</p>
 <script>
+// code: [greeting, adults, children]
 var M = {
-  prateek: "Prateek (test)", ansh: "Ansh & family", naini: "Naini, Nivi & family", rishi: "Rishi & family",
-  lana: "Lana & Gavin", vayu: "Vayu & family", amora: "Amora & family", veddya: "Veddya & family",
-  ruby: "Ruby", rampy: "Rampy", bobo: "BoBo & family", veer: "Veer & family", sumit: "Sumit & Neelima",
-  abhinav: "Priyanka & Abhinav", manu: "Manu & family", deepak: "Priyanka & Deepak", saish: "Saish, Sharu & family",
-  anu: "Anu, Sama & family", avay: "Avay & family", navya: "Navya, Baby V & family", ved: "Ved & family",
-  sangharsh: "Priyanka & Sangharsh", anay: "Anay, Avni & family"
+  prateek: ["Prateek (test)", 2, 1], ansh: ["Ansh & family", 2, 1], naini: ["Naini, Nivi & family", 4, 2], rishi: ["Rishi & family", 2, 1],
+  lana: ["Lana & Gavin", 2, 0], vayu: ["Vayu & family", 2, 1], amora: ["Amora & family", 2, 1], veddya: ["Veddya & family", 2, 1],
+  ruby: ["Ruby", 1, 0], rampy: ["Rampy", 1, 0], bobo: ["BoBo & family", 2, 1], veer: ["Veer & family", 2, 2],
+  sumit: ["Sumit & Neelima", 2, 0], abhinav: ["Priyanka & Abhinav", 2, 0], manu: ["Manu & family", 3, 1], deepak: ["Priyanka & Deepak", 2, 0],
+  saish: ["Saish, Sharu & family", 2, 2], anu: ["Anu, Sama & family", 2, 2], avay: ["Avay & family", 2, 1], navya: ["Navya, Baby V & family", 2, 2],
+  ved: ["Ved & family", 2, 1], sangharsh: ["Priyanka & Sangharsh", 2, 0], anay: ["Anay, Avni & family", 2, 2]
 };
 var k = location.search.slice(1).split('&')[0].toLowerCase();
-var n = M[k];
-location.replace('https://prateek-garima.github.io/nirmay-bistro/' + (n ? '?n=' + encodeURIComponent(n) : ''));
+var g = M[k];
+location.replace('https://prateek-garima.github.io/nirmay-bistro/' + (g ? '?n=' + encodeURIComponent(g[0]) + '&a=' + g[1] + '&c=' + g[2] : ''));
 </script>
 </body>
 </html>
